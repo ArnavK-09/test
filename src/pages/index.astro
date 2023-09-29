@@ -1,0 +1,371 @@
+---
+// imports
+import Layout from "../layouts/Layout.astro";
+import ObjectCard from "../components/cards/objective.astro";
+---
+
+<Layout title="Your Daily Newspaper Companion">
+	<section
+		class="bg-gradient-to-b from-[#181b1f] from-75% to-[#ee322d] text-gray-100"
+	>
+		<div
+			class="container flex flex-col justify-center p-6 mx-auto sm:py-10 lg:py-24 lg:flex-row lg:justify-between"
+		>
+			<div
+				class="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left"
+			>
+				<h1 class="text-5xl font-semibold leadi sm:text-6xl">
+					Your
+					<span
+						class="bg-clip-text font-extrabold text-transparent bg-gradient-to-r from-[#f5443e] via-[#f72f28] to-[#e42720]"
+					>
+						Daily Newspaper
+					</span>
+					 Companion!
+				</h1>
+				<p class="mt-6 mb-8 text-lg sm:mb-12">
+					Dictum aliquam porta in condimentum ac integer
+					<br class="hidden md:inline lg:hidden" />turpis pulvinar,
+					est scelerisque ligula sem
+				</p>
+				<div class="md:flex md:gap-4 space-y-5 md:space-y-0">
+					<div>
+						<button
+							class="bg-[#e42720] text-lg w-full hover:shadow-none shadow-[#ff184e] px-8 hover:scale-110 ease-in-out delay-0 transition-transform py-3 rounded-lg shadow-sm text-black"
+							>Download</button
+						>
+					</div>
+					<div>
+						<button
+							class="px-8 py-3 w-full text-lg font-semibold border rounded-lg hover:scale-110 ease-in-out delay-0 transition-transform text-[#e42720] border-[#e42720]"
+							>View On Appstore</button
+						>
+					</div>
+				</div>
+			</div>
+			<div
+				class="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128"
+			>
+				<img
+					src="https://i.ibb.co/C7SySvF/7c6b12b2e61f27ff46aa073bcf92646d-removebg-preview.png"
+					alt="Hero Image"
+					class="object-contain shakeme z-10 sm:h-[40rem] lg:h-128 xl:h-112 2xl:h-128"
+				/>
+			</div>
+		</div>
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			class="-mt-10 z-0"
+			viewBox="0 0 1440 320"
+		>
+			<path
+				fill="#ee322d"
+				fill-opacity="1"
+				d="M0,192L34.3,176C68.6,160,137,128,206,128C274.3,128,343,160,411,149.3C480,139,549,85,617,74.7C685.7,64,754,96,823,117.3C891.4,139,960,149,1029,144C1097.1,139,1166,117,1234,101.3C1302.9,85,1371,75,1406,69.3L1440,64L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"
+			></path>
+		</svg>
+	</section>
+	<!-- next section  -->
+	<div
+		class="relative bg-gradient-to-b from-[#ee322d] to-[#ce211b] via-[#ce211b]"
+	>
+		<div class="absolute inset-x-0 bottom-0">
+			<svg
+				viewBox="0 0 224 12"
+				fill="currentColor"
+				class="w-full -mb-1 text-[#181b1f]"
+				preserveAspectRatio="none"
+			>
+				<path
+					d="M0,0 C48.8902582,6.27314026 86.2235915,9.40971039 112,9.40971039 C137.776408,9.40971039 175.109742,6.27314026 224,0 L224,12.0441132 L0,12.0441132 L0,0 Z"
+				></path>
+			</svg>
+		</div>
+		<div
+			class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20"
+		>
+			<div
+				class="relative max-w-2xl sm:mx-auto sm:max-w-xl md:max-w-2xl sm:text-center"
+			>
+				<h2
+					class="mb-6 text-4xl sm:font-extrabold font-extrabold tracking-wide text-white sm:text-5xl sm:leading-2"
+				>
+					Subscribe to Our<br class="hidden md:block" />
+					 Daily Letter
+				</h2>
+				<p
+					class="mb-6 text-base font-thin tracking-wide text-white/80 md:text-lg"
+				>
+					Sed ut perspiciatis unde omnis iste natus error sit
+					voluptatem accusantium doloremque laudantium, totam rem
+					aperiam, eaque ipsa quae. explicabo. Sed ut perspiciatis
+					unde omnis.
+				</p>
+				<form
+					class="flex flex-col items-center w-full mb-4 md:flex-row md:px-16"
+				>
+					<input
+						placeholder="Enter Your Email"
+						required=""
+						type="text"
+						class="flex-grow rounded-full w-full h-12 px-4 mb-3 text-black transition duration-200 bg-transparent border-2 border-black appearance-none md:mr-2 md:mb-0 focus:border-deep-purple-accent-200 focus:outline-none focus:shadow-outline placeholder:text-black/70"
+					/>
+					<button
+						type="submit"
+						class="inline-flex items-center ease-in-out delay-0 transition-transform rounded-full justify-center w-full h-12 px-6 font-medium tracking-wide text-white duration-200 shadow-md md:w-auto bg-black hover:scale-110 focus:shadow-outline focus:outline-none"
+					>
+						Subscribe
+					</button>
+				</form>
+				<a
+					href="/"
+					aria-label="Scroll down"
+					class="flex animate-bounce mt-14 items-center justify-center w-10 h-10 mx-auto text-black duration-300 transform border-2 border-black rounded-full hover:text-teal-accent-400 hover:border-teal-accent-400 hover:shadow hover:scale-110"
+				>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="12"
+						height="12"
+						viewBox="0 0 12 12"
+						fill="black"
+					>
+						<path
+							d="M10.293,3.293,6,7.586,1.707,3.293A1,1,0,0,0,.293,4.707l5,5a1,1,0,0,0,1.414,0l5-5a1,1,0,1,0-1.414-1.414Z"
+						></path>
+					</svg>
+				</a>
+			</div>
+		</div>
+	</div>
+	<!-- next section  -->
+	<section class="md:h-screen -mt-10 md:py-16 pt-10">
+		<h2
+			class="text-4xl px-4 ml-2 pl-1.5 text-white text-left tracking-wide pb-2 font-bold"
+		>
+			<span
+				class="inline-block w-2 p-0 zigzag-underline border-transparent border-1 bg-gradient-to-r from-[#f5443e] via-[#e42720] to-[#e42720] transform -skew-x-12 transform-origin-left text-transparent text-thin"
+				>.</span
+			>
+			 Our Company's
+			<span
+				class="text-4xl text-transparent bg-clip-text font-bold bg-gradient-to-r from-[#e4352f] via-[#fc413b] to-[#e42720]"
+			>
+				Services
+			</span>
+		</h2>
+		<div class="mx-5 my-6 grid grid-cols-1 md:grid-cols-3 gap-4">
+			<ObjectCard
+				title="Communication"
+				description="We aim to provide proper communication to our customers"
+				icon={`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"> <path fill-rule="evenodd" d="M12 6.75a5.25 5.25 0 016.775-5.025.75.75 0 01.313 1.248l-3.32 3.319c.063.475.276.934.641 1.299.365.365.824.578 1.3.64l3.318-3.319a.75.75 0 011.248.313 5.25 5.25 0 01-5.472 6.756c-1.018-.086-1.87.1-2.309.634L7.344 21.3A3.298 3.298 0 112.7 16.657l8.684-7.151c.533-.44.72-1.291.634-2.309A5.342 5.342 0 0112 6.75zM4.117 19.125a.75.75 0 01.75-.75h.008a.75.75 0 01.75.75v.008a.75.75 0 01-.75.75h-.008a.75.75 0 01-.75-.75v-.008z" clip-rule="evenodd"></path> <path d="M10.076 8.64l-2.201-2.2V4.874a.75.75 0 00-.364-.643l-3.75-2.25a.75.75 0 00-.916.113l-.75.75a.75.75 0 00-.113.916l2.25 3.75a.75.75 0 00.643.364h1.564l2.062 2.062 1.575-1.297z" ></path> <path fill-rule="evenodd" d="M12.556 17.329l4.183 4.182a3.375 3.375 0 004.773-4.773l-3.306-3.305a6.803 6.803 0 01-1.53.043c-.394-.034-.682-.006-.867.042a.589.589 0 00-.167.063l-3.086 3.748zm3.414-1.36a.75.75 0 011.06 0l1.875 1.876a.75.75 0 11-1.06 1.06L15.97 17.03a.75.75 0 010-1.06z" clip-rule="evenodd"></path> </svg>`}
+			/>
+			<ObjectCard
+				title="Communication"
+				description="We aim to provide proper communication to our customers"
+				icon={`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"> <path fill-rule="evenodd" d="M12 6.75a5.25 5.25 0 016.775-5.025.75.75 0 01.313 1.248l-3.32 3.319c.063.475.276.934.641 1.299.365.365.824.578 1.3.64l3.318-3.319a.75.75 0 011.248.313 5.25 5.25 0 01-5.472 6.756c-1.018-.086-1.87.1-2.309.634L7.344 21.3A3.298 3.298 0 112.7 16.657l8.684-7.151c.533-.44.72-1.291.634-2.309A5.342 5.342 0 0112 6.75zM4.117 19.125a.75.75 0 01.75-.75h.008a.75.75 0 01.75.75v.008a.75.75 0 01-.75.75h-.008a.75.75 0 01-.75-.75v-.008z" clip-rule="evenodd"></path> <path d="M10.076 8.64l-2.201-2.2V4.874a.75.75 0 00-.364-.643l-3.75-2.25a.75.75 0 00-.916.113l-.75.75a.75.75 0 00-.113.916l2.25 3.75a.75.75 0 00.643.364h1.564l2.062 2.062 1.575-1.297z" ></path> <path fill-rule="evenodd" d="M12.556 17.329l4.183 4.182a3.375 3.375 0 004.773-4.773l-3.306-3.305a6.803 6.803 0 01-1.53.043c-.394-.034-.682-.006-.867.042a.589.589 0 00-.167.063l-3.086 3.748zm3.414-1.36a.75.75 0 011.06 0l1.875 1.876a.75.75 0 11-1.06 1.06L15.97 17.03a.75.75 0 010-1.06z" clip-rule="evenodd"></path> </svg>`}
+			/>
+			<ObjectCard
+				title="Communication"
+				description="We aim to provide proper communication to our customers"
+				icon={`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"> <path fill-rule="evenodd" d="M12 6.75a5.25 5.25 0 016.775-5.025.75.75 0 01.313 1.248l-3.32 3.319c.063.475.276.934.641 1.299.365.365.824.578 1.3.64l3.318-3.319a.75.75 0 011.248.313 5.25 5.25 0 01-5.472 6.756c-1.018-.086-1.87.1-2.309.634L7.344 21.3A3.298 3.298 0 112.7 16.657l8.684-7.151c.533-.44.72-1.291.634-2.309A5.342 5.342 0 0112 6.75zM4.117 19.125a.75.75 0 01.75-.75h.008a.75.75 0 01.75.75v.008a.75.75 0 01-.75.75h-.008a.75.75 0 01-.75-.75v-.008z" clip-rule="evenodd"></path> <path d="M10.076 8.64l-2.201-2.2V4.874a.75.75 0 00-.364-.643l-3.75-2.25a.75.75 0 00-.916.113l-.75.75a.75.75 0 00-.113.916l2.25 3.75a.75.75 0 00.643.364h1.564l2.062 2.062 1.575-1.297z" ></path> <path fill-rule="evenodd" d="M12.556 17.329l4.183 4.182a3.375 3.375 0 004.773-4.773l-3.306-3.305a6.803 6.803 0 01-1.53.043c-.394-.034-.682-.006-.867.042a.589.589 0 00-.167.063l-3.086 3.748zm3.414-1.36a.75.75 0 011.06 0l1.875 1.876a.75.75 0 11-1.06 1.06L15.97 17.03a.75.75 0 010-1.06z" clip-rule="evenodd"></path> </svg>`}
+			/>
+			<ObjectCard
+				title="Updates"
+				description="We aim to provide daily updates to our customers"
+				icon={`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"> <path d="M15.75 8.25a.75.75 0 01.75.75c0 1.12-.492 2.126-1.27 2.812a.75.75 0 11-.992-1.124A2.243 2.243 0 0015 9a.75.75 0 01.75-.75z" ></path> <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM4.575 15.6a8.25 8.25 0 009.348 4.425 1.966 1.966 0 00-1.84-1.275.983.983 0 01-.97-.822l-.073-.437c-.094-.565.25-1.11.8-1.267l.99-.282c.427-.123.783-.418.982-.816l.036-.073a1.453 1.453 0 012.328-.377L16.5 15h.628a2.25 2.25 0 011.983 1.186 8.25 8.25 0 00-6.345-12.4c.044.262.18.503.389.676l1.068.89c.442.369.535 1.01.216 1.49l-.51.766a2.25 2.25 0 01-1.161.886l-.143.048a1.107 1.107 0 00-.57 1.664c.369.555.169 1.307-.427 1.605L9 13.125l.423 1.059a.956.956 0 01-1.652.928l-.679-.906a1.125 1.125 0 00-1.906.172L4.575 15.6z" clip-rule="evenodd"></path> </svg>`}
+			/>
+			<ObjectCard
+				title="Updates"
+				description="We aim to provide daily updates to our customers"
+				icon={`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"> <path d="M15.75 8.25a.75.75 0 01.75.75c0 1.12-.492 2.126-1.27 2.812a.75.75 0 11-.992-1.124A2.243 2.243 0 0015 9a.75.75 0 01.75-.75z" ></path> <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM4.575 15.6a8.25 8.25 0 009.348 4.425 1.966 1.966 0 00-1.84-1.275.983.983 0 01-.97-.822l-.073-.437c-.094-.565.25-1.11.8-1.267l.99-.282c.427-.123.783-.418.982-.816l.036-.073a1.453 1.453 0 012.328-.377L16.5 15h.628a2.25 2.25 0 011.983 1.186 8.25 8.25 0 00-6.345-12.4c.044.262.18.503.389.676l1.068.89c.442.369.535 1.01.216 1.49l-.51.766a2.25 2.25 0 01-1.161.886l-.143.048a1.107 1.107 0 00-.57 1.664c.369.555.169 1.307-.427 1.605L9 13.125l.423 1.059a.956.956 0 01-1.652.928l-.679-.906a1.125 1.125 0 00-1.906.172L4.575 15.6z" clip-rule="evenodd"></path> </svg>`}
+			/>
+			<ObjectCard
+				title="Updates"
+				description="We aim to provide daily updates to our customers"
+				icon={`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"> <path d="M15.75 8.25a.75.75 0 01.75.75c0 1.12-.492 2.126-1.27 2.812a.75.75 0 11-.992-1.124A2.243 2.243 0 0015 9a.75.75 0 01.75-.75z" ></path> <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM4.575 15.6a8.25 8.25 0 009.348 4.425 1.966 1.966 0 00-1.84-1.275.983.983 0 01-.97-.822l-.073-.437c-.094-.565.25-1.11.8-1.267l.99-.282c.427-.123.783-.418.982-.816l.036-.073a1.453 1.453 0 012.328-.377L16.5 15h.628a2.25 2.25 0 011.983 1.186 8.25 8.25 0 00-6.345-12.4c.044.262.18.503.389.676l1.068.89c.442.369.535 1.01.216 1.49l-.51.766a2.25 2.25 0 01-1.161.886l-.143.048a1.107 1.107 0 00-.57 1.664c.369.555.169 1.307-.427 1.605L9 13.125l.423 1.059a.956.956 0 01-1.652.928l-.679-.906a1.125 1.125 0 00-1.906.172L4.575 15.6z" clip-rule="evenodd"></path> </svg>`}
+			/>
+		</div>
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+			<path
+				fill="#f73029"
+				fill-opacity="1"
+				d="M0,256L0,256L144,256L144,96L288,96L288,256L432,256L432,160L576,160L576,224L720,224L720,288L864,288L864,288L1008,288L1008,128L1152,128L1152,224L1296,224L1296,32L1440,32L1440,320L1296,320L1296,320L1152,320L1152,320L1008,320L1008,320L864,320L864,320L720,320L720,320L576,320L576,320L432,320L432,320L288,320L288,320L144,320L144,320L0,320L0,320Z"
+			></path>
+		</svg>
+	</section>
+	<!-- next section  -->
+	<section
+		class="-mt-0.5 md:mt-28 md:h-screen bg-gradient-to-b from-[#f73029] to-[#dd2822] via-[#f73029]"
+	>
+		<div class="container px-5 mx-auto flex flex-wrap">
+			<div class="flex flex-wrap mt-8 justify-between w-full">
+				<div class="lg:w-3/5 md:w-2/3 md:pr-10 md:py-6">
+					<!-- step 1  -->
+					{
+						[1, 2, 3, 4].map((i) => (
+							<div class="flex relative pb-12">
+								<div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+									<div class="h-full w-1 bg-gray-200 pointer-events-none" />
+								</div>
+								<div class="flex-shrink-0 w-10 h-10 rounded-full bg-black inline-flex items-center justify-center text-white relative z-10">
+									<svg
+										fill="none"
+										stroke="currentColor"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="3.5"
+										class="w-5 h-5"
+										viewBox="0 0 24 24"
+									>
+										<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+									</svg>
+								</div>
+								<div class="flex-grow pl-4">
+									<h2 class="font-medium title-font text-sm text-black/80 mb-1 tracking-wider underline">
+										STEP {i}
+									</h2>
+									<p class="leading-relaxed">
+										Login Into Our app or Register, Go to
+										Subscription Page and Sbscribe to our
+										Daily News
+									</p>
+								</div>
+							</div>
+						))
+					}
+					<!-- step end  -->
+				</div>
+				<div>
+					<img
+						class="object-cover object-center rounded-lg md:mt-0 mt-12"
+						src="https://i.ibb.co/Yd3JXcs/image-removebg-preview.png"
+						alt="Steps Image"
+					/>
+				</div>
+			</div>
+		</div>
+	</section>
+	<svg class="-mt-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"
+		><path
+			fill="#dd2822"
+			fill-opacity="1"
+			d="M0,160L0,192L75.8,192L75.8,32L151.6,32L151.6,192L227.4,192L227.4,160L303.2,160L303.2,224L378.9,224L378.9,64L454.7,64L454.7,128L530.5,128L530.5,96L606.3,96L606.3,160L682.1,160L682.1,128L757.9,128L757.9,32L833.7,32L833.7,96L909.5,96L909.5,224L985.3,224L985.3,32L1061.1,32L1061.1,96L1136.8,96L1136.8,192L1212.6,192L1212.6,192L1288.4,192L1288.4,160L1364.2,160L1364.2,256L1440,256L1440,0L1364.2,0L1364.2,0L1288.4,0L1288.4,0L1212.6,0L1212.6,0L1136.8,0L1136.8,0L1061.1,0L1061.1,0L985.3,0L985.3,0L909.5,0L909.5,0L833.7,0L833.7,0L757.9,0L757.9,0L682.1,0L682.1,0L606.3,0L606.3,0L530.5,0L530.5,0L454.7,0L454.7,0L378.9,0L378.9,0L303.2,0L303.2,0L227.4,0L227.4,0L151.6,0L151.6,0L75.8,0L75.8,0L0,0L0,0Z"
+		></path></svg
+	>
+
+<!-- next section  -->
+<section class="my-20">
+	<h2
+		class="text-4xl pl-10 ml-2 text-white text-left tracking-wide pb-2 font-bold"
+	>
+		<span
+			class="inline-block w-2 p-0 zigzag-underline border-transparent border-1 bg-gradient-to-r from-[#f5443e] via-[#e42720] to-[#e42720] transform -skew-x-12 transform-origin-left text-transparent text-thin"
+			>.</span
+		>
+		 Latest News On
+		<span
+			class="text-4xl text-transparent bg-clip-text font-bold bg-gradient-to-r from-[#e4352f] via-[#fc413b] to-[#e42720]"
+		>
+			Fingertips
+		</span>
+	</h2>
+	<div class="my-10 grid grid-cols-2 md:grid-cols-2 w-full px-10 gap-4">
+		{
+			[1, 2].map(() => {
+				return (
+					<>
+						<div class="overflow-hidden cursor-pointer group relative m-0 flex h-full w-full rounded-xl shadow-xl ring-gray-900/5 sm:mx-auto">
+							<div class="z-10 h-full w-full overflow-hidden rounded-xl transition duration-300 ease-in-out">
+								<img
+									src="https://images.unsplash.com/photo-1506187334569-7596f62cf93f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3149&q=80"
+									class="animate-fade-in block h-full w-full scale-100 transform object-cover object-center opacity-100 transition duration-300 group-hover:scale-110"
+									alt=""
+								/>
+							</div>
+							<div class="absolute bottom-0 bg-gradient-to-t from-black/80 via-black/80 h-1/2 w-full z-20 transition duration-300 ease-in-out">
+								<div class="absolute my-6 bottom-0 mx-5">
+									<button class="bg-[#e42720] px-5 text-white my-1 skew-y-3 font-bold">
+										Travel
+									</button>
+									<br />
+									<strong class="text-2xl tracking-tight font-extrabold text-white transition duration-200 group-hover:underline decoration-[#e42720]">
+										10 Places You Can't Miss If It's Your
+										First Time in European
+									</strong>
+									<p class="text-sm font-light text-white/70">
+										And then there is the most dangerous
+										risk of all, the risk of spending your
+										life not doing what you want on the bet
+										you can buy yourself the freedom to do
+										it later.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="overflow-hidden cursor-pointer group relative m-0 flex h-full w-full rounded-xl shadow-xl ring-gray-900/5 sm:mx-auto">
+							<div class="z-10 h-full w-full overflow-hidden rounded-xl transition duration-300 ease-in-out">
+								<img
+									src="https://picsum.photos/seed/picsum/3149/1741"
+									class="animate-fade-in block h-full w-full scale-100 transform object-cover object-center opacity-100 transition duration-300 group-hover:scale-110"
+									alt=""
+								/>
+							</div>
+							<div class="absolute bottom-0 bg-gradient-to-t from-black/80 via-black/80 h-1/2 w-full z-20 transition duration-300 ease-in-out">
+								<div class="absolute my-6 bottom-0 mx-5">
+									<button class="bg-[#e42720] px-5 text-white my-1 skew-y-3 font-bold">
+										Self-care
+									</button>
+									<br />
+									<strong class="text-2xl tracking-tight font-extrabold text-white transition duration-200 group-hover:underline decoration-[#e42720]">
+										8 Mistakes That Will RUIN Your Weekend
+										Trips Plan
+									</strong>
+									<p class="text-sm font-light text-white/70">
+										Lorem ipsum dolor sit amet consectetur
+										adipisicing elit. Totam nulla, explicabo
+										eveniet possimus magnam voluptatibus.
+										Culpa mollitia consequatur, esse quas.
+									</p>
+								</div>
+							</div>
+						</div>
+					</>
+				);
+			})
+		}
+	</div>
+</section>
+<!-- next action  -->
+<section id="pattern_bg_banner_download" class="my-20 h-auto md:rounded-3xl py-10">
+		<div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
+		  <img class="h-full w-auto mb-10" alt="banner" src="https://i.ibb.co/VxF5SZf/image-removebg-preview.png">
+		  <div class="text-center lg:w-2/3 w-full">
+			<h1 class="sm:text-5xl text-3xl mb-4 font-extrabold tracking-wide text-white">Download Our App!</h1>
+			<p class="mb-8 leading-relaxed text-gray-300/90 font-thin">Meggings kinfolk echo park stumptown DIY, kale chips beard jianbing tousled. Chambray dreamcatcher trust fund, kitsch vice godard disrupt ramps hexagon mustache umami snackwave tilde chillwave ugh. Pour-over meditation PBR&B pickled ennui celiac mlkshk freegan photo booth af fingerstache pitchfork.</p>
+			<div class="flex flex-wrap justify-center">
+				<img class="h-20 w-auto" src="https://www.blogkiat.com/wp-content/uploads/2017/10/google-playstore-download-button.png" alt="playstore download">
+				<img class="h-20 w-auto" src="https://www.blogkiat.com/wp-content/uploads/2017/10/google-playstore-download-button.png" alt="applestore download">
+			</div>
+		  </div>
+		</div>
+</section>
+</Layout>
+<style>
+	#pattern_bg_banner_download {
+		background-image: radial-gradient(
+				circle at center center,
+				#f42b24,
+				#ce5a56
+			),
+			repeating-radial-gradient(
+				circle at center center,
+				#f42b24,
+				#f42b24,
+				27px,
+				transparent 54px,
+				transparent 27px
+			);
+		background-blend-mode: multiply;
+		background-color: #ce5a56;
+	}
+</style>

@@ -1,0 +1,71 @@
+---
+// Layouts Props
+export interface Props {
+	title: string;
+	description?: string;
+}
+
+const { title = "Page Title", description = "Page Description" } = Astro.props;
+
+// Imports
+import Header from "../components/header.astro";
+import Footer from "../components/footer.astro";
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title} - Your Daily Newspaper Companion!</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap"
+			rel="stylesheet"
+		/></head
+	>
+	<body class="overflow-x-hidden bg-[#181b1f]">
+		<header>
+			<Header />
+		</header>
+		<slot />
+		<section class="-mt-10">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#131518" fill-opacity="1" d="M0,256L480,32L960,224L1440,160L1440,320L960,320L480,320L0,320Z"></path></svg>
+			<Footer />
+		</section>
+	</body>
+</html>
+
+<style is:global>
+	/* whole web page  */
+	html,
+	body {
+		font-family: "Oxygen", sans-serif;
+	}
+	
+	/* shake animation */
+@keyframes shake {
+	0% {
+		transform: rotate(0.5deg);
+	}
+	50% {
+		transform: rotate(-0.5deg);
+	}
+	100% {
+		transform: rotate(0.5deg);
+	}
+}
+.shakeme {
+	animation: shake 1.5s infinite;
+	animation-timing-function: linear;
+}
+.shakeme:hover {
+	animation: none;
+	scale: 1.01;
+}
+</style>

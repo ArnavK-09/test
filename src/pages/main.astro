@@ -1,0 +1,39 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../layouts/Layout.astro';
+
+const publishedPosts = await getCollection('posts', ({ data }) => {
+  return data.draft !== true;
+});
+const authors = await getCollection('authors');
+---
+
+<Layout title="Keystatic & Astro's Content Collections">
+  <div class="text-white">
+    <h1>Keystatic ⚡️ + Astro 🚀</h1>
+    <p>
+      This homepage shows how to load data from Astro's content collections.
+    </p>
+    <p>
+      <a href="/keystatic">Click here to visit the Admin UI</a>, or the link
+      below to view a post in the collection.
+    </p>
+    <h2>Posts</h2>
+    <ul>
+      {
+        publishedPosts.map(post => (
+          <li>
+            <a href={`/posts/${post.slug}`}>{post.data.title}</a>
+          </li>
+        ))
+      }
+            {
+              authors.map(post => (
+                <li>
+                  <a href={`/author/${post.id}`}>{(post.data.name)}</a>
+                </li>
+              ))
+            }
+    </ul>
+  </div>
+</Layout>
